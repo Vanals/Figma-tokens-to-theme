@@ -123,7 +123,7 @@
           "description": "Purple100"
         },
         "red": {
-          "value": "#ff0000",
+          "value": "#",
           "type": "color"
         }
       }
