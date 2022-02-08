@@ -1,0 +1,1 @@
+Spiking the implementation of Styled Dictionary within FigmaTokens plugin; to transform it to a NewsKit theme.
