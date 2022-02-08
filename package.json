@@ -1,0 +1,12 @@
+{
+  "name": "figma-tokens-to-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "style-dictionary:build": "rm -rf build  && yarn style-dictionary build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.1.1"
+  }
+}

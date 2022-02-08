@@ -1,0 +1,64 @@
+{
+  "card": {
+    "border": {
+      "radius": {
+        "mobile": {
+          "value": "{radii.none.value}"
+        },
+        "desktop": {
+          "value": "{radii.sm.value}"
+        }
+      }
+    },
+    "heading": {
+      "color": {
+        "value": "{color.font.base.value}"
+      }
+    },
+    "text": {
+      "color": {
+        "value": "{color.font.tertiary.value}"
+      }
+    }
+  },
+  "color": {
+    "base": {
+      "gray": {
+        "light": {
+          "value": "#CCCCCC"
+        },
+        "medium": {
+          "value": "#999999"
+        },
+        "dark": {
+          "value": "#111111"
+        }
+      },
+      "red": {
+        "value": "#FF0000"
+      },
+      "green": {
+        "value": "#00FF00"
+      }
+    },
+    "font": {
+      "base": {
+        "value": "{color.base.red.value}"
+      },
+      "secondary": {
+        "value": "{color.base.green.value}"
+      },
+      "tertiary": {
+        "value": "{color.base.gray.dark.value}"
+      }
+    }
+  },
+  "radii": {
+    "none": {
+      "value": "0"
+    },
+    "sm": {
+      "value": "8px"
+    }
+  }
+}

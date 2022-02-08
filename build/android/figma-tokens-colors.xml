@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Tue, 08 Feb 2022 11:21:30 GMT
+-->
+<resources>
+  <string name="nk_light_color_ink_contrast">#2a205c</string>
+  <string name="nk_light_color_palette_purple100">#2a205c</string>
+  <string name="nk_light_color_palette_purple200">##7F00FF</string>
+  <string name="nk_light_color_palette_light">#CCCCCC</string>
+  <string name="nk_light_overlay_tint_base010">##7F00FF</string>
+  <string name="nk_light_overlay_gradient_base_horizontal">linear-gradient(180deg, #ffffff00 0%, #ffffff 100%)</string>
+  <string name="nk_light_border_radius_sharp">0</string>
+  <string name="nk_light_border_radius_circle">50%</string>
+  <string name="nk_light_border_width_000">0</string>
+  <string name="nk_light_border_width_010">1</string>
+  <string name="nk_light_font_family_010">DM Sans</string>
+  <string name="nk_light_font_family_020">Bitter</string>
+  <string name="nk_light_font_size_010">12</string>
+  <string name="nk_light_font_line_height_010">100%</string>
+  <string name="nk_light_shadow_010">[object Object]</string>
+  <string name="nk_light_sizing_000">0</string>
+  <string name="nk_light_sizing_010">4</string>
+  
+</resources>
