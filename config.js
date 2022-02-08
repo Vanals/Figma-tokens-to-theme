@@ -17,6 +17,7 @@ var config = {
         "format": "compose/object",
         "className": "StyleDictionaryColor",
         "packageName": "StyleDictionaryColor",
+        // Needed to tell this format which values to pic up. In this case, all of them.
         "filter": (props) => props.type !== undefined 
       }]
     },
@@ -26,6 +27,7 @@ var config = {
       "files": [{
         "destination": "figma-tokens-colors.xml",
         "format": "android/resources",
+        // Needed to tell this format which values to pic up. In this case, all of them.
         "filter": (props) => props.type !== undefined 
       }]
     },
