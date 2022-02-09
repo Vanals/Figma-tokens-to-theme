@@ -48,6 +48,44 @@ var config = {
           "format": "javascript/es6"
         }
       ]
+    },
+    "js-module-flat": {
+      "transformGroup": "js",
+      "buildPath": "build/js-module-flat/",
+      "files": [
+        {
+          "destination": "figma-tokens.js",
+          "format": "javascript/module-flat"
+        }
+      ]
+    },
+    "json-flat": {
+      "transformGroup": "js",
+      "buildPath": "build/json-flat/",
+      "options": {
+        // Look here 👇
+        "outputReferences": true
+      },
+      "files": [
+        {
+          "destination": "figma-tokens.json",
+          "format": "json/flat"
+        }
+      ]
+    },
+    "nk-theme": {
+      "transformGroup": "js",
+      "buildPath": "build/nk-theme/",
+      "options": {
+        // Look here 👇 TODO not working as expected, not getting alias but values
+        "outputReferences": true
+      },
+      "files": [
+        {
+          "destination": "figma-tokens.json",
+          "format": "nk-theme"
+        }
+      ]
     }
   }
 }

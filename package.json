@@ -7,6 +7,7 @@
     "style-dictionary:build": "rm -rf build  && yarn style-dictionary build"
   },
   "devDependencies": {
-    "style-dictionary": "^3.1.1"
+    "style-dictionary": "^3.1.1",
+    "token-transformer": "^0.0.17"
   }
 }
