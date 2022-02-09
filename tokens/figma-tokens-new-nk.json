@@ -126,6 +126,10 @@
           "value": "#ff0000",
           "type": "color"
         }
+      },
+      "green010": {
+        "value": "green",
+        "type": "color"
       }
     },
     "overlay": {
@@ -207,10 +211,6 @@
         "value": "4",
         "type": "sizing"
       }
-    },
-    "green010": {
-      "value": "green",
-      "type": "color"
     }
   }
 }
