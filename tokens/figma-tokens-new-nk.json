@@ -1,11 +1,6 @@
 {
   "NK-Light": {
     "color": {
-      "inkContrast": {
-        "value": "{NK-Light.color.palette.purple100}",
-        "type": "color",
-        "description": "Headlines or copy where emphasis is needed"
-      },
       "palette": {
         "purple100": {
           "value": "#2a205c",
@@ -21,6 +16,11 @@
           "value": "#CCCCCC",
           "type": "color"
         }
+      },
+      "inkContrast": {
+        "value": "{NK-Light.color.palette.purple100}",
+        "type": "color",
+        "description": "Headlines or copy where emphasis is needed"
       }
     },
     "overlay": {
@@ -106,11 +106,6 @@
   },
   "NK-Dark": {
     "color": {
-      "inkContrast": {
-        "value": "{NK-Light.color.palette.purple100}",
-        "type": "color",
-        "description": "Headlines or copy where emphasis is needed"
-      },
       "palette": {
         "purple100": {
           "value": "#2a205c",
@@ -126,6 +121,11 @@
           "value": "#ff0000",
           "type": "color"
         }
+      },
+      "inkContrast": {
+        "value": "{NK-Light.color.palette.purple100}",
+        "type": "color",
+        "description": "Headlines or copy where emphasis is needed"
       },
       "green010": {
         "value": "green",
