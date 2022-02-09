@@ -55,7 +55,7 @@
         }
       }
     },
-    "font":{
+    "font": {
       "family": {
         "010": {
           "value": "DM Sans",
@@ -123,7 +123,7 @@
           "description": "Purple100"
         },
         "red": {
-          "value": "#",
+          "value": "#ff0000",
           "type": "color"
         }
       }
@@ -160,7 +160,7 @@
         }
       }
     },
-    "font":{
+    "font": {
       "family": {
         "010": {
           "value": "DM Sans",
@@ -207,6 +207,10 @@
         "value": "4",
         "type": "sizing"
       }
+    },
+    "green010": {
+      "value": "green",
+      "type": "color"
     }
   }
 }
