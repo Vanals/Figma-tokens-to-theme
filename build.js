@@ -7,15 +7,14 @@ console.log('\n==============================================');
 StyleDictionary.registerFormat({
   name: 'nk-theme',
   formatter: function({dictionary, platform, options, file}) {
-
+    
+    // TODO call color -> colors. Can we change the name here and the type: color in FIGMa TOken?
     let nkTheme = {
-      motion: {},
-      border: {},
-      breakpoint: {},
-      color: {},
-      font: {},
-      overlay: {},
-      shadow: {},
+      borders: {},
+      colors: {},
+      fonts: {},
+      overlays: {},
+      shadows: {},
       sizing: {},
     
       // presets
@@ -40,7 +39,7 @@ StyleDictionary.registerFormat({
 
     dictionary.allTokens.forEach(token => {
       // e.g color, borderRadius, etc.
-      const nkSection = token.type
+      const tokenType = token.type
       
       const tokenValue = token.value
 
@@ -49,7 +48,19 @@ StyleDictionary.registerFormat({
 
 
       // TODO section dynamic
-      nkTheme[nkSection] = { ...nkTheme[nkSection], [nkTokenName]: tokenValue }
+      // nkTheme[nkSection] = { ...nkTheme[nkSection], [nkTokenName]: tokenValue }
+      
+      switch(tokenType) {
+        case "color":
+          nkTheme["colors"] = { ...nkTheme["colors"], [nkTokenName]: tokenValue }
+          break;
+        case "borderRadius":
+          nkTheme["borders"] = { ...nkTheme["borders"], [nkTokenName]: tokenValue }
+          break;
+        default:
+          // code block
+      }
+
 
     })
 

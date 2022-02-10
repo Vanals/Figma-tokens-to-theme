@@ -1901,905 +1901,871 @@
     }
   },
   "NK-Dark": {
-    "NK-NewsKit": {
-      "transparent": {
-        "value": "#ffffff00",
-        "type": "color"
-      },
-      "overlay": {
-        "tints": {
-          "overlayTintBase010": {
-            "value": "{NK-NewsKit.palettes.tints.blackTint020}",
-            "type": "color"
-          },
-          "overlayTintBase020": {
-            "value": "{NK-NewsKit.palettes.tints.blackTint040}",
-            "type": "color"
-          },
-          "overlayTintBase030": {
-            "value": "{NK-NewsKit.palettes.tints.blackTint060}",
-            "type": "color"
-          },
-          "overlayTintBase040": {
-            "value": "{NK-NewsKit.palettes.tints.blackTint080}",
-            "type": "color"
-          },
-          "overlayTintInverse010": {
-            "value": "{NK-NewsKit.palettes.tints.whiteTint020}",
-            "type": "color"
-          },
-          "overlayTintInverse020": {
-            "value": "{NK-NewsKit.palettes.tints.whiteTint040}",
-            "type": "color"
-          },
-          "overlayTintInverse030": {
-            "value": "{NK-NewsKit.palettes.tints.whiteTint060}",
-            "type": "color"
-          },
-          "overlayTintInverse040": {
-            "value": "{NK-NewsKit.palettes.tints.whiteTint080}",
-            "type": "color"
-          }
-        },
-        "gradients": {
-          "overlayGradientBaseHorizontal": {
-            "value": "linear-gradient(180deg, #ffffff00 0%, #ffffff 100%)",
-            "type": "color"
-          },
-          "overlayGradientBaseVertical": {
-            "value": "linear-gradient(90deg, #ffffff00 0%, #ffffff 100%)",
-            "type": "color"
-          },
-          "overlayGradientInverseHorizontal": {
-            "value": "linear-gradient(180deg, #0a0a0a00 0%, #0a0a0a 100%)",
-            "type": "color"
-          },
-          "overlayGradientInverseVertical": {
-            "value": "linear-gradient(90deg, #0a0a0a00 0%, #0a0a0a 100%)",
-            "type": "color"
-          }
-        }
-      },
-      "ink": {
-        "inkBase": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral030}",
-          "type": "color",
-          "description": "Body and paragraphs"
-        },
-        "inkContrast": {
-          "value": "{NK-NewsKit.palettes.tints.white}",
-          "type": "color",
-          "description": "Headlines or copy where emphasis is needed"
-        },
-        "inkSubtle": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral040}",
-          "type": "color",
-          "description": "Subheadlines, labels and supporting copy"
-        },
-        "inkNonEssential": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral070}",
-          "type": "color",
-          "description": "Text elements in their inactive (disabled) state"
-        },
-        "inkInverse": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral090}",
-          "type": "color",
-          "description": "Used when contrast with the background can't be achieved"
-        },
-        "inkPositive": {
-          "value": "{NK-NewsKit.palettes.green.green040}",
-          "type": "color",
-          "description": "For scenarios where the message needs positive intent"
-        },
-        "inkNegative": {
-          "value": "{NK-NewsKit.palettes.red.red040}",
-          "type": "color",
-          "description": "For scenarios where the message needs negative intent"
-        },
-        "inkNotice": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral040}",
-          "type": "color",
-          "description": "For scenarios where the message needs a negative intent"
-        },
-        "inkInformative": {
-          "value": "{NK-NewsKit.palettes.teal.teal050}",
-          "type": "color",
-          "description": "For scenarios where the message needs to be informative"
-        },
-        "inkBrand010": {
-          "value": "{NK-NewsKit.palettes.blue.blue060}",
-          "type": "color",
-          "description": "Text and icons in the primary brand colour"
-        },
-        "inkBrand020": {
-          "value": "{NK-NewsKit.palettes.blue.blue030}",
-          "type": "color",
-          "description": "Text and icons in the secondary brand colour"
-        }
-      },
-      "interface": {
-        "interfaceBackground": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral100}",
-          "type": "color",
-          "description": "Page backgrounds"
-        },
-        "interface010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral090}",
-          "type": "color",
-          "description": "Primary component backgrounds e.g. Card background"
-        },
-        "interface020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color"
-        },
-        "interface030": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral070}",
-          "type": "color"
-        },
-        "interface040": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral060}",
-          "type": "color"
-        },
-        "interface050": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral050}",
-          "type": "color"
-        },
-        "interface060": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral030}",
-          "type": "color",
-          "description": "Contrasting background colour"
-        },
-        "interfaceBrand010": {
-          "value": "{NK-NewsKit.palettes.blue.blue060}",
-          "type": "color",
-          "description": "Primary brand colour"
-        },
-        "interfaceBrand020": {
-          "value": "{NK-NewsKit.palettes.blue.blue030}",
-          "type": "color",
-          "description": "Secondary brand colour"
-        },
-        "interfacePositive010": {
-          "value": "{NK-NewsKit.palettes.green.green050}",
-          "type": "color",
-          "description": "Positive messaging where emphasis is needed. "
-        },
-        "interfacePositive020": {
-          "value": "{NK-NewsKit.palettes.green.green090}",
-          "type": "color",
-          "description": "Positive messaging backgrounds"
-        },
-        "interfaceNegative010": {
-          "value": "{NK-NewsKit.palettes.red.red050}",
-          "type": "color",
-          "description": "Negative messaging where emphasis is needed. "
-        },
-        "interfaceNegative020": {
-          "value": "{NK-NewsKit.palettes.red.red090}",
-          "type": "color",
-          "description": "Negative messaging backgrounds"
-        },
-        "interfaceNotice010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral030}",
-          "type": "color",
-          "description": "Default messaging where emphasis is needed. "
-        },
-        "interfaceNotice020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Default messaging backgrounds"
-        },
-        "interfaceInformative010": {
-          "value": "{NK-NewsKit.palettes.teal.teal050}",
-          "type": "color",
-          "description": "Informative messaging where emphasis is needed. "
-        },
-        "interfaceInformative020": {
-          "value": "{NK-NewsKit.palettes.teal.teal090}",
-          "type": "color",
-          "description": "Informative messaging backgrounds"
-        },
-        "interfaceNeutral010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral030}",
-          "type": "color",
-          "description": "Neutral messaging backgrounds where emphasis is needed"
-        },
-        "interfaceNeutral020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Neutral messaging backgrounds"
-        },
-        "interfaceSkeleton010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral070}",
-          "type": "color",
-          "description": "Interface page load"
-        },
-        "interfaceSkeleton020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Interface page load"
-        }
-      },
-      "interactive": {
-        "interactivePrimary010": {
-          "value": "{NK-NewsKit.palettes.blue.blue090}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Outlined & Minimal  Button"
-        },
-        "interactivePrimary020": {
-          "value": "{NK-NewsKit.palettes.blue.blue080}",
-          "type": "color",
-          "description": "Background colour applied to the Loading state of all  Buttons , & the Active state of the Outlined & Minimal Button"
-        },
-        "interactivePrimary030": {
-          "value": "{NK-NewsKit.palettes.blue.blue040}",
-          "type": "color",
-          "description": "Background colour applied to the Base state of the Solid  Button , & the border colour of the Outlined Button"
-        },
-        "interactivePrimary040": {
-          "value": "{NK-NewsKit.palettes.blue.blue030}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Solid  Button , & the border colour of the Outlined Button"
-        },
-        "interactivePrimary050": {
-          "value": "{NK-NewsKit.palettes.blue.blue020}",
-          "type": "color",
-          "description": "Background colour applied to the Active state of the Solid  Button , & the border colour of the Outlined Button"
-        },
-        "interactiveSecondary010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Outlined & Minimal"
-        },
-        "interactiveSecondary020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral070}",
-          "type": "color",
-          "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
-        },
-        "interactiveSecondary030": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral040}",
-          "type": "color",
-          "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveSecondary040": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral030}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveSecondary050": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral020}",
-          "type": "color",
-          "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactivePositive010": {
-          "value": "{NK-NewsKit.palettes.green.green100}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
-        },
-        "interactivePositive020": {
-          "value": "{NK-NewsKit.palettes.green.green090}",
-          "type": "color",
-          "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
-        },
-        "interactivePositive030": {
-          "value": "{NK-NewsKit.palettes.green.green060}",
-          "type": "color",
-          "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactivePositive040": {
-          "value": "{NK-NewsKit.palettes.green.green050}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactivePositive050": {
-          "value": "{NK-NewsKit.palettes.green.green040}",
-          "type": "color",
-          "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveNegative010": {
-          "value": "{NK-NewsKit.palettes.red.red090}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
-        },
-        "interactiveNegative020": {
-          "value": "{NK-NewsKit.palettes.red.red080}",
-          "type": "color",
-          "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
-        },
-        "interactiveNegative030": {
-          "value": "{NK-NewsKit.palettes.red.red050}",
-          "type": "color",
-          "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveNegative040": {
-          "value": "{NK-NewsKit.palettes.red.red060}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveNegative050": {
-          "value": "{NK-NewsKit.palettes.red.red070}",
-          "type": "color",
-          "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveDisabled010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Disabled states"
-        },
-        "interactiveVisited010": {
-          "value": "{NK-NewsKit.palettes.purple.purple040}",
-          "type": "color",
-          "description": "Visited states"
-        },
-        "interactiveInverse010": {
-          "value": "{NK-NewsKit.palettes.tints.blackTint010}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
-        },
-        "interactiveInverse020": {
-          "value": "{NK-NewsKit.palettes.tints.blackTint020}",
-          "type": "color",
-          "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
-        },
-        "interactiveInverse030": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral090}",
-          "type": "color",
-          "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveInverse040": {
-          "value": "{NK-NewsKit.palettes.tints.blackTint070}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveInverse050": {
-          "value": "{NK-NewsKit.palettes.tints.blackTint080}",
-          "type": "color",
-          "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
-        },
-        "interactiveInput010": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral080}",
-          "type": "color",
-          "description": "Background colour applied to the Hover state of the Text Input, the Select component button & the list item"
-        },
-        "interactiveInput020": {
-          "value": "{NK-NewsKit.palettes.neutral.neutral060}",
-          "type": "color",
-          "description": "Background & border colours applied to the Unselected state of the Switch, the Checkbox, & Radio components"
-        },
-        "interactiveInput030": {
-          "value": "{NK-NewsKit.palettes.blue.blue070}",
-          "type": "color",
-          "description": "Background colour applied to the 'Feedback' of the Checkbox & Radio components"
-        },
-        "interactiveInput040": {
-          "value": "{NK-NewsKit.palettes.blue.blue040}",
-          "type": "color",
-          "description": "Background & border colours applied to the Selected state of the Switch, the Checkbox, & Radio components"
-        },
-        "interactiveInput050": {
-          "value": "{NK-NewsKit.palettes.blue.blue030}",
-          "type": "color",
-          "description": "Active state background and border for selection controls & input components"
-        }
-      },
-      "palettes": {
-        "purple": {
-          "purple100": {
-            "value": "#2a205c",
-            "type": "color",
-            "description": "Purple100"
-          },
-          "purple090": {
-            "value": "#332770",
-            "type": "color",
-            "description": "Purple090"
-          },
-          "purple080": {
-            "value": "#36248c",
-            "type": "color",
-            "description": "Purple080"
-          },
-          "purple070": {
-            "value": "#442eb5",
-            "type": "color",
-            "description": "Purple070"
-          },
-          "purple060": {
-            "value": "#4c33cc",
-            "type": "color",
-            "description": "Purple060"
-          },
-          "purple050": {
-            "value": "#5e44e4",
-            "type": "color",
-            "description": "Purple050"
-          },
-          "purple040": {
-            "value": "#7264ef",
-            "type": "color",
-            "description": "Purple040"
-          },
-          "purple030": {
-            "value": "#9b87fc",
-            "type": "color",
-            "description": "Purple030"
-          },
-          "purple020": {
-            "value": "#bbaeff",
-            "type": "color",
-            "description": "Purple020"
-          },
-          "purple010": {
-            "value": "#e5e0ff",
-            "type": "color",
-            "description": "Purple010"
-          }
-        },
-        "blue": {
-          "blue100": {
-            "value": "#192c48",
-            "type": "color",
-            "description": "Blue100"
-          },
-          "blue090": {
-            "value": "#213a5f",
-            "type": "color",
-            "description": "Blue090"
-          },
-          "blue080": {
-            "value": "#213a82",
-            "type": "color",
-            "description": "Blue080"
-          },
-          "blue070": {
-            "value": "#2b4aab",
-            "type": "color",
-            "description": "Blue070"
-          },
-          "blue060": {
-            "value": "#3358cc",
-            "type": "color",
-            "description": "Blue060"
-          },
-          "blue050": {
-            "value": "#446be4",
-            "type": "color",
-            "description": "Blue050"
-          },
-          "blue040": {
-            "value": "#577ffb",
-            "type": "color",
-            "description": "Blue040"
-          },
-          "blue030": {
-            "value": "#87a4fc",
-            "type": "color",
-            "description": "Blue030"
-          },
-          "blue020": {
-            "value": "#aebfff",
-            "type": "color",
-            "description": "Blue020"
-          },
-          "blue010": {
-            "value": "#e0e7ff",
-            "type": "color",
-            "description": "Blue010"
-          }
-        },
-        "teal": {
-          "teal100": {
-            "value": "#083136",
-            "type": "color",
-            "description": "Teal100"
-          },
-          "teal090": {
-            "value": "#093e43",
-            "type": "color",
-            "description": "Teal090"
-          },
-          "teal080": {
-            "value": "#0d575e",
-            "type": "color",
-            "description": "Teal080"
-          },
-          "teal070": {
-            "value": "#05717d",
-            "type": "color",
-            "description": "Teal070"
-          },
-          "teal060": {
-            "value": "#06808e",
-            "type": "color",
-            "description": "Teal060"
-          },
-          "teal050": {
-            "value": "#41a0aa",
-            "type": "color",
-            "description": "Teal050"
-          },
-          "teal040": {
-            "value": "#65bbc4",
-            "type": "color",
-            "description": "Teal040"
-          },
-          "teal030": {
-            "value": "#81d2da",
-            "type": "color",
-            "description": "Teal030"
-          },
-          "teal020": {
-            "value": "#a8e0e6",
-            "type": "color",
-            "description": "Teal020"
-          },
-          "teal010": {
-            "value": "#ebf8f9",
-            "type": "color",
-            "description": "Teal010"
-          }
-        },
-        "amber": {
-          "amber100": {
-            "value": "#ff4b00",
-            "type": "color",
-            "description": "Amber100"
-          },
-          "amber090": {
-            "value": "#ff6000",
-            "type": "color",
-            "description": "Amber090"
-          },
-          "amber080": {
-            "value": "#ff7200",
-            "type": "color",
-            "description": "Amber080"
-          },
-          "amber070": {
-            "value": "#ff8200",
-            "type": "color",
-            "description": "Amber070"
-          },
-          "amber060": {
-            "value": "#ff8f00",
-            "type": "color",
-            "description": "Amber060"
-          },
-          "amber050": {
-            "value": "#ff9900",
-            "type": "color",
-            "description": "Amber050"
-          },
-          "amber040": {
-            "value": "#ffad2c",
-            "type": "color",
-            "description": "Amber040"
-          },
-          "amber030": {
-            "value": "#ffc058",
-            "type": "color",
-            "description": "Amber030"
-          },
-          "amber020": {
-            "value": "#ffdb9d",
-            "type": "color",
-            "description": "Amber020"
-          },
-          "amber010": {
-            "value": "#ffeecf",
-            "type": "color",
-            "description": "Amber010"
-          }
-        },
-        "red": {
-          "red100": {
-            "value": "#4d0000",
-            "type": "color",
-            "description": "Red100"
-          },
-          "red090": {
-            "value": "#790101",
-            "type": "color",
-            "description": "Red090"
-          },
-          "red080": {
-            "value": "#a60100",
-            "type": "color",
-            "description": "Red080"
-          },
-          "red070": {
-            "value": "#d20600",
-            "type": "color",
-            "description": "Red070"
-          },
-          "red060": {
-            "value": "#ef1703",
-            "type": "color",
-            "description": "Red060"
-          },
-          "red050": {
-            "value": "#ff362e",
-            "type": "color",
-            "description": "Red050"
-          },
-          "red040": {
-            "value": "#ff4d4d",
-            "type": "color",
-            "description": "Red040"
-          },
-          "red030": {
-            "value": "#ff8a8a",
-            "type": "color",
-            "description": "Red030"
-          },
-          "red020": {
-            "value": "#ffb8b8",
-            "type": "color",
-            "description": "Red020"
-          },
-          "red010": {
-            "value": "#ffe6e5",
-            "type": "color",
-            "description": "Red010"
-          }
-        },
-        "green": {
-          "green100": {
-            "value": "#003e11",
-            "type": "color",
-            "description": "Green100"
-          },
-          "green090": {
-            "value": "#005d1c",
-            "type": "color",
-            "description": "Green090"
-          },
-          "green080": {
-            "value": "#0a782a",
-            "type": "color",
-            "description": "Green080"
-          },
-          "green070": {
-            "value": "#148f39",
-            "type": "color",
-            "description": "Green070"
-          },
-          "green060": {
-            "value": "#23a248",
-            "type": "color",
-            "description": "Green060"
-          },
-          "green050": {
-            "value": "#42ba67",
-            "type": "color",
-            "description": "Green050"
-          },
-          "green040": {
-            "value": "#67cf86",
-            "type": "color",
-            "description": "Green040"
-          },
-          "green030": {
-            "value": "#8ee1a6",
-            "type": "color",
-            "description": "Green030"
-          },
-          "green020": {
-            "value": "#b8efc8",
-            "type": "color",
-            "description": "Green020"
-          },
-          "green010": {
-            "value": "#e6faeb",
-            "type": "color",
-            "description": "Green010"
-          }
-        },
-        "neutral": {
-          "neutral100": {
-            "value": "#0a0a0a",
-            "type": "color",
-            "description": "Neutral100"
-          },
-          "neutral090": {
-            "value": "#2e2e2e",
-            "type": "color",
-            "description": "Neutral090"
-          },
-          "neutral080": {
-            "value": "#535353",
-            "type": "color",
-            "description": "Neutral080"
-          },
-          "neutral070": {
-            "value": "#777777",
-            "type": "color",
-            "description": "Neutral070"
-          },
-          "neutral060": {
-            "value": "#9c9c9c",
-            "type": "color",
-            "description": "Neutral060"
-          },
-          "neutral050": {
-            "value": "#c0c0c0",
-            "type": "color",
-            "description": "Neutral050"
-          },
-          "neutral040": {
-            "value": "#cccccc",
-            "type": "color",
-            "description": "Neutral040"
-          },
-          "neutral030": {
-            "value": "#dedede",
-            "type": "color",
-            "description": "Neutral030"
-          },
-          "neutral020": {
-            "value": "#f4f4f4",
-            "type": "color",
-            "description": "Neutral020"
-          },
-          "neutral010": {
-            "value": "#fafafa",
-            "type": "color",
-            "description": "Neutral010"
-          }
-        },
-        "tints": {
-          "white": {
-            "value": "#ffffff",
-            "type": "color",
-            "description": "White"
-          },
-          "whiteTint090": {
-            "value": "#ffffffe6",
-            "type": "color",
-            "description": "WhiteTint090"
-          },
-          "whiteTint080": {
-            "value": "#ffffffcc",
-            "type": "color",
-            "description": "WhiteTint080"
-          },
-          "whiteTint070": {
-            "value": "#ffffffb3",
-            "type": "color",
-            "description": "WhiteTint070"
-          },
-          "whiteTint060": {
-            "value": "#ffffff99",
-            "type": "color",
-            "description": "WhiteTint060"
-          },
-          "whiteTint050": {
-            "value": "#ffffff80",
-            "type": "color",
-            "description": "WhiteTint050"
-          },
-          "whiteTint040": {
-            "value": "#ffffff66",
-            "type": "color",
-            "description": "WhiteTint040"
-          },
-          "whiteTint030": {
-            "value": "#ffffff4d",
-            "type": "color",
-            "description": "WhiteTint030"
-          },
-          "whiteTint020": {
-            "value": "#ffffff33",
-            "type": "color",
-            "description": "WhiteTint020"
-          },
-          "whiteTint010": {
-            "value": "#ffffff1a",
-            "type": "color",
-            "description": "WhiteTint010"
-          },
-          "black": {
-            "value": "#0a0a0a",
-            "type": "color",
-            "description": "Black"
-          },
-          "blackTint090": {
-            "value": "#000000e6",
-            "type": "color",
-            "description": "BlackTint090"
-          },
-          "blackTint080": {
-            "value": "#000000cc",
-            "type": "color",
-            "description": "BlackTint080"
-          },
-          "blackTint070": {
-            "value": "#000000b3",
-            "type": "color",
-            "description": "BlackTint070"
-          },
-          "blackTint060": {
-            "value": "#00000099",
-            "type": "color",
-            "description": "BlackTint060"
-          },
-          "blackTint050": {
-            "value": "#00000080",
-            "type": "color",
-            "description": "BlackTint050"
-          },
-          "blackTint040": {
-            "value": "#00000066",
-            "type": "color",
-            "description": "BlackTint040"
-          },
-          "blackTint030": {
-            "value": "#0000004d",
-            "type": "color",
-            "description": "BlackTint030"
-          },
-          "blackTint020": {
-            "value": "#00000033",
-            "type": "color",
-            "description": "BlackTint020"
-          },
-          "blackTint010": {
-            "value": "#0000001a",
-            "type": "color",
-            "description": "BlackTint010"
-          }
-        },
-        "social": {
-          "socialReddit": {
-            "value": "#ff4500",
-            "type": "color"
-          },
-          "socialWhatsapp": {
-            "value": "#25d366",
-            "type": "color"
-          },
-          "socialYoutube": {
-            "value": "#ff0000",
-            "type": "color"
-          },
-          "socialInstagram": {
-            "value": "#c32aa3",
-            "type": "color"
-          },
-          "socialFacebook": {
-            "value": "#1877f2",
-            "type": "color"
-          },
-          "socialTwitter": {
-            "value": "#1da1f2",
-            "type": "color"
-          },
-          "socialGithub": {
-            "value": "#000000",
-            "type": "color"
-          },
-          "socialApple": {
-            "value": "#000000",
-            "type": "color"
-          },
-          "socialGoogleBlue": {
-            "value": "#4285f4",
-            "type": "color"
-          },
-          "socialGoogleRed": {
-            "value": "#db4437",
-            "type": "color"
-          },
-          "socialGoogleYellow": {
-            "value": "#f4b400",
-            "type": "color"
-          },
-          "socialGoogleGreen": {
-            "value": "#0f9d58",
-            "type": "color"
-          }
-        }
-      }
+    "transparent": {
+      "value": "#ffffff00",
+      "type": "color"
+    },
+    "overlayTintBase010": {
+      "value": "{blackTint020}",
+      "type": "color"
+    },
+    "overlayTintBase020": {
+      "value": "{blackTint040}",
+      "type": "color"
+    },
+    "overlayTintBase030": {
+      "value": "{blackTint060}",
+      "type": "color"
+    },
+    "overlayTintBase040": {
+      "value": "{blackTint080}",
+      "type": "color"
+    },
+    "overlayTintInverse010": {
+      "value": "{whiteTint020}",
+      "type": "color"
+    },
+    "overlayTintInverse020": {
+      "value": "{whiteTint040}",
+      "type": "color"
+    },
+    "overlayTintInverse030": {
+      "value": "{whiteTint060}",
+      "type": "color"
+    },
+    "overlayTintInverse040": {
+      "value": "{whiteTint080}",
+      "type": "color"
+    },
+    "overlayGradientBaseHorizontal": {
+      "value": "linear-gradient(180deg, #ffffff00 0%, #ffffff 100%)",
+      "type": "color"
+    },
+    "overlayGradientBaseVertical": {
+      "value": "linear-gradient(90deg, #ffffff00 0%, #ffffff 100%)",
+      "type": "color"
+    },
+    "overlayGradientInverseHorizontal": {
+      "value": "linear-gradient(180deg, #0a0a0a00 0%, #0a0a0a 100%)",
+      "type": "color"
+    },
+    "overlayGradientInverseVertical": {
+      "value": "linear-gradient(90deg, #0a0a0a00 0%, #0a0a0a 100%)",
+      "type": "color"
+    },
+    "inkBase": {
+      "value": "{neutral030}",
+      "type": "color",
+      "description": "Body and paragraphs"
+    },
+    "inkContrast": {
+      "value": "{white}",
+      "type": "color",
+      "description": "Headlines or copy where emphasis is needed"
+    },
+    "inkSubtle": {
+      "value": "{neutral040}",
+      "type": "color",
+      "description": "Subheadlines, labels and supporting copy"
+    },
+    "inkNonEssential": {
+      "value": "{neutral070}",
+      "type": "color",
+      "description": "Text elements in their inactive (disabled) state"
+    },
+    "inkInverse": {
+      "value": "{neutral090}",
+      "type": "color",
+      "description": "Used when contrast with the background can't be achieved"
+    },
+    "inkPositive": {
+      "value": "{green040}",
+      "type": "color",
+      "description": "For scenarios where the message needs positive intent"
+    },
+    "inkNegative": {
+      "value": "{red040}",
+      "type": "color",
+      "description": "For scenarios where the message needs negative intent"
+    },
+    "inkNotice": {
+      "value": "{neutral040}",
+      "type": "color",
+      "description": "For scenarios where the message needs a negative intent"
+    },
+    "inkInformative": {
+      "value": "{teal050}",
+      "type": "color",
+      "description": "For scenarios where the message needs to be informative"
+    },
+    "inkBrand010": {
+      "value": "{blue060}",
+      "type": "color",
+      "description": "Text and icons in the primary brand colour"
+    },
+    "inkBrand020": {
+      "value": "{blue030}",
+      "type": "color",
+      "description": "Text and icons in the secondary brand colour"
+    },
+    "interfaceBackground": {
+      "value": "{neutral100}",
+      "type": "color",
+      "description": "Page backgrounds"
+    },
+    "interface010": {
+      "value": "{neutral090}",
+      "type": "color",
+      "description": "Primary component backgrounds e.g. Card background"
+    },
+    "interface020": {
+      "value": "{neutral080}",
+      "type": "color"
+    },
+    "interface030": {
+      "value": "{neutral070}",
+      "type": "color"
+    },
+    "interface040": {
+      "value": "{neutral060}",
+      "type": "color"
+    },
+    "interface050": {
+      "value": "{neutral050}",
+      "type": "color"
+    },
+    "interface060": {
+      "value": "{neutral030}",
+      "type": "color",
+      "description": "Contrasting background colour"
+    },
+    "interfaceBrand010": {
+      "value": "{blue060}",
+      "type": "color",
+      "description": "Primary brand colour"
+    },
+    "interfaceBrand020": {
+      "value": "{blue030}",
+      "type": "color",
+      "description": "Secondary brand colour"
+    },
+    "interfacePositive010": {
+      "value": "{green050}",
+      "type": "color",
+      "description": "Positive messaging where emphasis is needed. "
+    },
+    "interfacePositive020": {
+      "value": "{green090}",
+      "type": "color",
+      "description": "Positive messaging backgrounds"
+    },
+    "interfaceNegative010": {
+      "value": "{red050}",
+      "type": "color",
+      "description": "Negative messaging where emphasis is needed. "
+    },
+    "interfaceNegative020": {
+      "value": "{red090}",
+      "type": "color",
+      "description": "Negative messaging backgrounds"
+    },
+    "interfaceNotice010": {
+      "value": "{neutral030}",
+      "type": "color",
+      "description": "Default messaging where emphasis is needed. "
+    },
+    "interfaceNotice020": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Default messaging backgrounds"
+    },
+    "interfaceInformative010": {
+      "value": "{teal050}",
+      "type": "color",
+      "description": "Informative messaging where emphasis is needed. "
+    },
+    "interfaceInformative020": {
+      "value": "{teal090}",
+      "type": "color",
+      "description": "Informative messaging backgrounds"
+    },
+    "interfaceNeutral010": {
+      "value": "{neutral030}",
+      "type": "color",
+      "description": "Neutral messaging backgrounds where emphasis is needed"
+    },
+    "interfaceNeutral020": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Neutral messaging backgrounds"
+    },
+    "interfaceSkeleton010": {
+      "value": "{neutral070}",
+      "type": "color",
+      "description": "Interface page load"
+    },
+    "interfaceSkeleton020": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Interface page load"
+    },
+    "interactivePrimary010": {
+      "value": "{blue090}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Outlined & Minimal  Button"
+    },
+    "interactivePrimary020": {
+      "value": "{blue080}",
+      "type": "color",
+      "description": "Background colour applied to the Loading state of all  Buttons , & the Active state of the Outlined & Minimal Button"
+    },
+    "interactivePrimary030": {
+      "value": "{blue040}",
+      "type": "color",
+      "description": "Background colour applied to the Base state of the Solid  Button , & the border colour of the Outlined Button"
+    },
+    "interactivePrimary040": {
+      "value": "{blue030}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Solid  Button , & the border colour of the Outlined Button"
+    },
+    "interactivePrimary050": {
+      "value": "{blue020}",
+      "type": "color",
+      "description": "Background colour applied to the Active state of the Solid  Button , & the border colour of the Outlined Button"
+    },
+    "interactiveSecondary010": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Outlined & Minimal"
+    },
+    "interactiveSecondary020": {
+      "value": "{neutral070}",
+      "type": "color",
+      "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
+    },
+    "interactiveSecondary030": {
+      "value": "{neutral040}",
+      "type": "color",
+      "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveSecondary040": {
+      "value": "{neutral030}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveSecondary050": {
+      "value": "{neutral020}",
+      "type": "color",
+      "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactivePositive010": {
+      "value": "{green100}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
+    },
+    "interactivePositive020": {
+      "value": "{green090}",
+      "type": "color",
+      "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
+    },
+    "interactivePositive030": {
+      "value": "{green060}",
+      "type": "color",
+      "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactivePositive040": {
+      "value": "{green050}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactivePositive050": {
+      "value": "{green040}",
+      "type": "color",
+      "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveNegative010": {
+      "value": "{red090}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
+    },
+    "interactiveNegative020": {
+      "value": "{red080}",
+      "type": "color",
+      "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
+    },
+    "interactiveNegative030": {
+      "value": "{red050}",
+      "type": "color",
+      "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveNegative040": {
+      "value": "{red060}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveNegative050": {
+      "value": "{red070}",
+      "type": "color",
+      "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveDisabled010": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Disabled states"
+    },
+    "interactiveVisited010": {
+      "value": "{purple040}",
+      "type": "color",
+      "description": "Visited states"
+    },
+    "interactiveInverse010": {
+      "value": "{blackTint010}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Outlined & Minimal Button"
+    },
+    "interactiveInverse020": {
+      "value": "{blackTint020}",
+      "type": "color",
+      "description": "Background colour applied to the Loading state of all Buttons, & the Active state of the Outlined & Minimal Button"
+    },
+    "interactiveInverse030": {
+      "value": "{neutral090}",
+      "type": "color",
+      "description": "Background colour applied to the Base state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveInverse040": {
+      "value": "{blackTint070}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveInverse050": {
+      "value": "{blackTint080}",
+      "type": "color",
+      "description": "Background colour applied to the Active state of the Solid Button, & the border colour of the Outlined Button"
+    },
+    "interactiveInput010": {
+      "value": "{neutral080}",
+      "type": "color",
+      "description": "Background colour applied to the Hover state of the Text Input, the Select component button & the list item"
+    },
+    "interactiveInput020": {
+      "value": "{neutral060}",
+      "type": "color",
+      "description": "Background & border colours applied to the Unselected state of the Switch, the Checkbox, & Radio components"
+    },
+    "interactiveInput030": {
+      "value": "{blue070}",
+      "type": "color",
+      "description": "Background colour applied to the 'Feedback' of the Checkbox & Radio components"
+    },
+    "interactiveInput040": {
+      "value": "{blue040}",
+      "type": "color",
+      "description": "Background & border colours applied to the Selected state of the Switch, the Checkbox, & Radio components"
+    },
+    "interactiveInput050": {
+      "value": "{blue030}",
+      "type": "color",
+      "description": "Active state background and border for selection controls & input components"
+    },
+    "purple100": {
+      "value": "#2a205c",
+      "type": "color",
+      "description": "Purple100"
+    },
+    "purple090": {
+      "value": "#332770",
+      "type": "color",
+      "description": "Purple090"
+    },
+    "purple080": {
+      "value": "#36248c",
+      "type": "color",
+      "description": "Purple080"
+    },
+    "purple070": {
+      "value": "#442eb5",
+      "type": "color",
+      "description": "Purple070"
+    },
+    "purple060": {
+      "value": "#4c33cc",
+      "type": "color",
+      "description": "Purple060"
+    },
+    "purple050": {
+      "value": "#5e44e4",
+      "type": "color",
+      "description": "Purple050"
+    },
+    "purple040": {
+      "value": "#7264ef",
+      "type": "color",
+      "description": "Purple040"
+    },
+    "purple030": {
+      "value": "#9b87fc",
+      "type": "color",
+      "description": "Purple030"
+    },
+    "purple020": {
+      "value": "#bbaeff",
+      "type": "color",
+      "description": "Purple020"
+    },
+    "purple010": {
+      "value": "#e5e0ff",
+      "type": "color",
+      "description": "Purple010"
+    },
+    "blue100": {
+      "value": "#192c48",
+      "type": "color",
+      "description": "Blue100"
+    },
+    "blue090": {
+      "value": "#213a5f",
+      "type": "color",
+      "description": "Blue090"
+    },
+    "blue080": {
+      "value": "#213a82",
+      "type": "color",
+      "description": "Blue080"
+    },
+    "blue070": {
+      "value": "#2b4aab",
+      "type": "color",
+      "description": "Blue070"
+    },
+    "blue060": {
+      "value": "#3358cc",
+      "type": "color",
+      "description": "Blue060"
+    },
+    "blue050": {
+      "value": "#446be4",
+      "type": "color",
+      "description": "Blue050"
+    },
+    "blue040": {
+      "value": "#577ffb",
+      "type": "color",
+      "description": "Blue040"
+    },
+    "blue030": {
+      "value": "#87a4fc",
+      "type": "color",
+      "description": "Blue030"
+    },
+    "blue020": {
+      "value": "#aebfff",
+      "type": "color",
+      "description": "Blue020"
+    },
+    "blue010": {
+      "value": "#e0e7ff",
+      "type": "color",
+      "description": "Blue010"
+    },
+    "teal100": {
+      "value": "#083136",
+      "type": "color",
+      "description": "Teal100"
+    },
+    "teal090": {
+      "value": "#093e43",
+      "type": "color",
+      "description": "Teal090"
+    },
+    "teal080": {
+      "value": "#0d575e",
+      "type": "color",
+      "description": "Teal080"
+    },
+    "teal070": {
+      "value": "#05717d",
+      "type": "color",
+      "description": "Teal070"
+    },
+    "teal060": {
+      "value": "#06808e",
+      "type": "color",
+      "description": "Teal060"
+    },
+    "teal050": {
+      "value": "#41a0aa",
+      "type": "color",
+      "description": "Teal050"
+    },
+    "teal040": {
+      "value": "#65bbc4",
+      "type": "color",
+      "description": "Teal040"
+    },
+    "teal030": {
+      "value": "#81d2da",
+      "type": "color",
+      "description": "Teal030"
+    },
+    "teal020": {
+      "value": "#a8e0e6",
+      "type": "color",
+      "description": "Teal020"
+    },
+    "teal010": {
+      "value": "#ebf8f9",
+      "type": "color",
+      "description": "Teal010"
+    },
+    "amber100": {
+      "value": "#ff4b00",
+      "type": "color",
+      "description": "Amber100"
+    },
+    "amber090": {
+      "value": "#ff6000",
+      "type": "color",
+      "description": "Amber090"
+    },
+    "amber080": {
+      "value": "#ff7200",
+      "type": "color",
+      "description": "Amber080"
+    },
+    "amber070": {
+      "value": "#ff8200",
+      "type": "color",
+      "description": "Amber070"
+    },
+    "amber060": {
+      "value": "#ff8f00",
+      "type": "color",
+      "description": "Amber060"
+    },
+    "amber050": {
+      "value": "#ff9900",
+      "type": "color",
+      "description": "Amber050"
+    },
+    "amber040": {
+      "value": "#ffad2c",
+      "type": "color",
+      "description": "Amber040"
+    },
+    "amber030": {
+      "value": "#ffc058",
+      "type": "color",
+      "description": "Amber030"
+    },
+    "amber020": {
+      "value": "#ffdb9d",
+      "type": "color",
+      "description": "Amber020"
+    },
+    "amber010": {
+      "value": "#ffeecf",
+      "type": "color",
+      "description": "Amber010"
+    },
+    "red100": {
+      "value": "#4d0000",
+      "type": "color",
+      "description": "Red100"
+    },
+    "red090": {
+      "value": "#790101",
+      "type": "color",
+      "description": "Red090"
+    },
+    "red080": {
+      "value": "#a60100",
+      "type": "color",
+      "description": "Red080"
+    },
+    "red070": {
+      "value": "#d20600",
+      "type": "color",
+      "description": "Red070"
+    },
+    "red060": {
+      "value": "#ef1703",
+      "type": "color",
+      "description": "Red060"
+    },
+    "red050": {
+      "value": "#ff362e",
+      "type": "color",
+      "description": "Red050"
+    },
+    "red040": {
+      "value": "#ff4d4d",
+      "type": "color",
+      "description": "Red040"
+    },
+    "red030": {
+      "value": "#ff8a8a",
+      "type": "color",
+      "description": "Red030"
+    },
+    "red020": {
+      "value": "#ffb8b8",
+      "type": "color",
+      "description": "Red020"
+    },
+    "red010": {
+      "value": "#ffe6e5",
+      "type": "color",
+      "description": "Red010"
+    },
+    "green100": {
+      "value": "#003e11",
+      "type": "color",
+      "description": "Green100"
+    },
+    "green090": {
+      "value": "#005d1c",
+      "type": "color",
+      "description": "Green090"
+    },
+    "green080": {
+      "value": "#0a782a",
+      "type": "color",
+      "description": "Green080"
+    },
+    "green070": {
+      "value": "#148f39",
+      "type": "color",
+      "description": "Green070"
+    },
+    "green060": {
+      "value": "#23a248",
+      "type": "color",
+      "description": "Green060"
+    },
+    "green050": {
+      "value": "#42ba67",
+      "type": "color",
+      "description": "Green050"
+    },
+    "green040": {
+      "value": "#67cf86",
+      "type": "color",
+      "description": "Green040"
+    },
+    "green030": {
+      "value": "#8ee1a6",
+      "type": "color",
+      "description": "Green030"
+    },
+    "green020": {
+      "value": "#b8efc8",
+      "type": "color",
+      "description": "Green020"
+    },
+    "green010": {
+      "value": "#e6faeb",
+      "type": "color",
+      "description": "Green010"
+    },
+    "neutral100": {
+      "value": "#0a0a0a",
+      "type": "color",
+      "description": "Neutral100"
+    },
+    "neutral090": {
+      "value": "#2e2e2e",
+      "type": "color",
+      "description": "Neutral090"
+    },
+    "neutral080": {
+      "value": "#535353",
+      "type": "color",
+      "description": "Neutral080"
+    },
+    "neutral070": {
+      "value": "#777777",
+      "type": "color",
+      "description": "Neutral070"
+    },
+    "neutral060": {
+      "value": "#9c9c9c",
+      "type": "color",
+      "description": "Neutral060"
+    },
+    "neutral050": {
+      "value": "#c0c0c0",
+      "type": "color",
+      "description": "Neutral050"
+    },
+    "neutral040": {
+      "value": "#cccccc",
+      "type": "color",
+      "description": "Neutral040"
+    },
+    "neutral030": {
+      "value": "#dedede",
+      "type": "color",
+      "description": "Neutral030"
+    },
+    "neutral020": {
+      "value": "#f4f4f4",
+      "type": "color",
+      "description": "Neutral020"
+    },
+    "neutral010": {
+      "value": "#fafafa",
+      "type": "color",
+      "description": "Neutral010"
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color",
+      "description": "White"
+    },
+    "whiteTint090": {
+      "value": "#ffffffe6",
+      "type": "color",
+      "description": "WhiteTint090"
+    },
+    "whiteTint080": {
+      "value": "#ffffffcc",
+      "type": "color",
+      "description": "WhiteTint080"
+    },
+    "whiteTint070": {
+      "value": "#ffffffb3",
+      "type": "color",
+      "description": "WhiteTint070"
+    },
+    "whiteTint060": {
+      "value": "#ffffff99",
+      "type": "color",
+      "description": "WhiteTint060"
+    },
+    "whiteTint050": {
+      "value": "#ffffff80",
+      "type": "color",
+      "description": "WhiteTint050"
+    },
+    "whiteTint040": {
+      "value": "#ffffff66",
+      "type": "color",
+      "description": "WhiteTint040"
+    },
+    "whiteTint030": {
+      "value": "#ffffff4d",
+      "type": "color",
+      "description": "WhiteTint030"
+    },
+    "whiteTint020": {
+      "value": "#ffffff33",
+      "type": "color",
+      "description": "WhiteTint020"
+    },
+    "whiteTint010": {
+      "value": "#ffffff1a",
+      "type": "color",
+      "description": "WhiteTint010"
+    },
+    "black": {
+      "value": "#0a0a0a",
+      "type": "color",
+      "description": "Black"
+    },
+    "blackTint090": {
+      "value": "#000000e6",
+      "type": "color",
+      "description": "BlackTint090"
+    },
+    "blackTint080": {
+      "value": "#000000cc",
+      "type": "color",
+      "description": "BlackTint080"
+    },
+    "blackTint070": {
+      "value": "#000000b3",
+      "type": "color",
+      "description": "BlackTint070"
+    },
+    "blackTint060": {
+      "value": "#00000099",
+      "type": "color",
+      "description": "BlackTint060"
+    },
+    "blackTint050": {
+      "value": "#00000080",
+      "type": "color",
+      "description": "BlackTint050"
+    },
+    "blackTint040": {
+      "value": "#00000066",
+      "type": "color",
+      "description": "BlackTint040"
+    },
+    "blackTint030": {
+      "value": "#0000004d",
+      "type": "color",
+      "description": "BlackTint030"
+    },
+    "blackTint020": {
+      "value": "#00000033",
+      "type": "color",
+      "description": "BlackTint020"
+    },
+    "blackTint010": {
+      "value": "#0000001a",
+      "type": "color",
+      "description": "BlackTint010"
+    },
+    "socialReddit": {
+      "value": "#ff4500",
+      "type": "color"
+    },
+    "socialWhatsapp": {
+      "value": "#25d366",
+      "type": "color"
+    },
+    "socialYoutube": {
+      "value": "#ff0000",
+      "type": "color"
+    },
+    "socialInstagram": {
+      "value": "#c32aa3",
+      "type": "color"
+    },
+    "socialFacebook": {
+      "value": "#1877f2",
+      "type": "color"
+    },
+    "socialTwitter": {
+      "value": "#1da1f2",
+      "type": "color"
+    },
+    "socialGithub": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "socialApple": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "socialGoogleBlue": {
+      "value": "#4285f4",
+      "type": "color"
+    },
+    "socialGoogleRed": {
+      "value": "#db4437",
+      "type": "color"
+    },
+    "socialGoogleYellow": {
+      "value": "#f4b400",
+      "type": "color"
+    },
+    "socialGoogleGreen": {
+      "value": "#0f9d58",
+      "type": "color"
     },
     "baseRem": {
       "value": "16",
@@ -3126,10 +3092,11 @@
         "y": "0.5",
         "blur": "2",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Default states of cards and active states of buttons"
     },
     "shadow020": {
       "value": {
@@ -3137,10 +3104,11 @@
         "y": "2",
         "blur": "4",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Notification badges"
     },
     "shadow030": {
       "value": {
@@ -3148,10 +3116,11 @@
         "y": "4",
         "blur": "8",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Navigation menu bars"
     },
     "shadow040": {
       "value": {
@@ -3159,10 +3128,11 @@
         "y": "8",
         "blur": "16",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Hover states of cards and button hover states"
     },
     "shadow050": {
       "value": {
@@ -3170,10 +3140,11 @@
         "y": "16",
         "blur": "24",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Pickers and popovers"
     },
     "shadow060": {
       "value": {
@@ -3181,10 +3152,11 @@
         "y": "20",
         "blur": "32",
         "spread": "0",
-        "color": "rgba({NK-NewsKit.palettes.neutral.neutral100}, 8%)",
+        "color": "rgba({neutral100}, 8%)",
         "type": "dropShadow"
       },
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Modals and dialogs"
     },
     "fontLetterSpacing010": {
       "value": "-0.5px",
