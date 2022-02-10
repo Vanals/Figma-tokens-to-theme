@@ -1,5 +1,5 @@
 var config = {
-  "source": ["tokens/figma-tokens-new-nk.json"],
+  "source": ["./transformed-tokens-from-james-v2.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",

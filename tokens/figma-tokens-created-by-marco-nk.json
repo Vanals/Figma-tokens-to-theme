@@ -102,21 +102,6 @@
         "value": "4",
         "type": "sizing"
       }
-    },
-    "typographyPresets": {
-      "editorialDisplay010": {
-        "value": {
-          "fontFamily": "{fontFamily020}",
-          "fontWeight": "{fontWeight030}",
-          "lineHeight": "{fontLineHeight020}",
-          "fontSize": "{fontSize140}",
-          "letterSpacing": "{fontLetterSpacing030}",
-          "paragraphSpacing": "-",
-          "textDecoration": "-",
-          "textCase": "-"
-        },
-        "type": "typography"
-      }
     }
   },
   "NK-Dark": {
