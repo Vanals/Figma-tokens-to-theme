@@ -1,5 +1,5 @@
 // import figmaTokensList from 'figma-tokens-nk.json'
-const figmaTokens = require('./tokens/figma-tokens-from-james-v2.json')
+const figmaTokens = require('../tokens/figma-tokens-from-james-v2.json')
 var fs = require('fs')
 
 const createFigmaTokensFileWithFullAliases = (figmaTokensObj) => {

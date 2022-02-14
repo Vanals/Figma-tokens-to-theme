@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "clean-repo": "rm -rf build && rm -rf enhanced-figma-tokens",
-    "style-dictionary:build": "yarn clean-repo && node create-full-aliases-figma-tokens.js && node build.js"
+    "style-dictionary:build": "yarn clean-repo && node ./tools/create-full-aliases-figma-tokens.js && node build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.1.1",
