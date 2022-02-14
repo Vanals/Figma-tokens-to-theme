@@ -1,5 +1,5 @@
 var config = {
-  "source": ["./tokens/figma-tokens-created-by-marco-nk.json"],
+  "source": ["./enhanced-figma-tokens/figma-tokens-with-full-aliases.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
@@ -76,10 +76,6 @@ var config = {
     "nk-theme": {
       "transformGroup": "js",
       "buildPath": "build/nk-theme/",
-      "options": {
-        // Look here 👇 TODO not working as expected, not getting alias but values
-        "outputReferences": true
-      },
       "files": [
         {
           "destination": "figma-tokens.json",

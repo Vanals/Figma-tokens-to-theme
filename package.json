@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "style-dictionary:build": "rm -rf build  && yarn style-dictionary build",
-    "style-dictionary:build:nk": "node build.js"
+    "clean-repo": "rm -rf build && rm -rf enhanced-figma-tokens",
+    "style-dictionary:build": "yarn clean-repo && node create-full-aliases-figma-tokens.js && node build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.1.1",
