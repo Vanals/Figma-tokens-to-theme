@@ -518,7 +518,7 @@
       "type": "color",
       "description": "Teal010"
     },
-    "freshRed": {
+    "amber100": {
       "value": "#ff4b00",
       "type": "color",
       "description": "Amber100"
