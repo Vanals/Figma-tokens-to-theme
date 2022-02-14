@@ -7,6 +7,7 @@ jobs:
     steps:
       - checkout
       - run: yarn install
+      - run: echo ${pipeline.git.branch} # run the `echo` command
 
 # TODO to remove if changing workflow activation trigger approach
 only_main: &only_main
