@@ -8,19 +8,11 @@ jobs:
       - checkout
       - run: yarn install
 
-# TODO to remove if changing workflow activation trigger approach
-# only_main: &only_main
-#   filters:
-#     branches:
-#       only: main
-
 workflows: 
   # TODO rename "package" with repo name
   build_and_deploy:
-   when:
-    or:
+    when:
+      and:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - build
-          # TODO do not filter by job BUT run workflow conditionally
-          # <<: *only_main
