@@ -21,6 +21,6 @@ workflows:
     or:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
-      - build:
+      - build
           # TODO do not filter by job BUT run workflow conditionally
           # <<: *only_main
