@@ -24,6 +24,8 @@ jobs:
     docker:
       - image: circleci/node:14.15.1
     steps:
+      - attach_workspace:
+          at: ./
       - create_package
 
 workflows: 
@@ -34,6 +36,6 @@ workflows:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - install_dependencies:
-          requires:
-            - create_package_for_release
       - create_package_for_release
+          requires:
+            - install_dependencies
