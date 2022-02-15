@@ -1,5 +1,10 @@
 version: 2.1
 
+executors:
+  node:
+    docker:
+      - image: circleci/node:16.13.0
+
 commands:
   create_package:
     description: "Creates a folder with package.json and files to be released to npm"
@@ -11,8 +16,7 @@ commands:
 jobs:
 
   install_dependencies: 
-    docker:
-      - image: circleci/node:16.13.0
+    executor: node
     steps:
       - checkout
       # TODO add restore chache
@@ -24,8 +28,7 @@ jobs:
           # TODO add save chache
 
   create_package_for_release:
-    docker:
-      - image: circleci/node:16.13.0
+    executor: node
     steps:
       - attach_workspace:
           at: ./
