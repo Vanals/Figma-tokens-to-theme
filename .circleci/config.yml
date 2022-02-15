@@ -6,7 +6,7 @@ commands:
     steps:
       - run: 
           name: Create package
-          command: $(node release-script/create-package.js)
+          command: node release-script/create-package.js
 
 jobs:
 
