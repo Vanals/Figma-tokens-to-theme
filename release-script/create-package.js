@@ -3,6 +3,7 @@ const fs = require('fs')
 
 const createPackage = function () {
   // TODO update with packageName
+  console.log('running create Package')
   // console.log('\n 👩‍💻Creating packageName...👨‍💻 \n')
   // Create package folder
   // TODO replace with package name folder
