@@ -12,7 +12,7 @@ jobs:
 
   install_dependencies: 
     docker:
-      - image: circleci/node:14.15.1
+      - image: circleci/node:16.13.0
     steps:
       - checkout
       # TODO add restore chache
@@ -25,7 +25,7 @@ jobs:
 
   create_package_for_release:
     docker:
-      - image: circleci/node:14.15.1
+      - image: circleci/node:16.13.0
     steps:
       - attach_workspace:
           at: ./
