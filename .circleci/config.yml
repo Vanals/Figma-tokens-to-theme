@@ -29,9 +29,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
+      - run: 'ls'
       - run: yarn style-dictionary:build
       - create_package
-      - run: 'ls'
   
   publish_to_npm:
     # parameters:

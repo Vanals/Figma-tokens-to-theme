@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const createPackage = function () {
   // TODO update with packageName
-  console.log('\n 👩‍💻Creating packageName...👨‍💻 \n')
+  // console.log('\n 👩‍💻Creating packageName...👨‍💻 \n')
   // Create package folder
   // TODO replace with package name folder
   fs.mkdir('./package-release-folder', { recursive: true }, (err) => {
