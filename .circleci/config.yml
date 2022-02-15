@@ -4,7 +4,7 @@ commands:
   create_package:
     description: "Creates a folder with package.json and files needed to be released to npm"
     steps:
-      - run: $(node scripts/create_package.js)
+      - run: $(node scripts/release-script.js)
 
 jobs:
   install_dependencies: 
