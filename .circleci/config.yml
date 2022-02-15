@@ -1,12 +1,30 @@
 version: 2.1
 
+commands:
+  create_package:
+    description: "Creates a folder with package.json and files needed to be released to npm"
+    steps:
+      - run: $(node scripts/create_package.js)
+
 jobs:
-  build: 
+  install_dependencies: 
     docker:
       - image: circleci/node:14.15.1
     steps:
       - checkout
+      # TODO add restore chache
       - run: yarn install
+      - persist_to_workspace: 
+          root: ./
+          # TODO CAN I REMOVE '-'? and move it to one line?
+          paths: ./
+          # TODO add save chache
+
+  create_package_to_be_released:
+    docker:
+      - image: circleci/node:14.15.1
+    steps:
+      - create_package
 
 workflows: 
   # TODO rename "package" with repo name
@@ -15,4 +33,4 @@ workflows:
       and:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
-      - build
+      - install_dependencies
