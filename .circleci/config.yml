@@ -2,11 +2,14 @@ version: 2.1
 
 commands:
   create_package:
-    description: "Creates a folder with package.json and files needed to be released to npm"
+    description: "Creates a folder with package.json and files to be released to npm"
     steps:
-      - run: $(node release-script/create-package.js)
+      - run: 
+          name: create package
+          command: $(node release-script/create-package.js)
 
 jobs:
+
   install_dependencies: 
     docker:
       - image: circleci/node:14.15.1
@@ -26,7 +29,44 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
+      - run: yarn style-dictionary:build
       - create_package
+      - run: 'ls'
+  
+  publish_to_npm:
+    # parameters:
+    #   publish_dev:
+    #     type: boolean
+    #     default: false
+    executor: node
+    steps:
+      #TODO Do I need to persist from create_package_for_release?
+      - attach_workspace:
+          at: ./
+      - run: 'ls'
+      # - run:
+      # TODO
+          # name: Add NPM login credentionals
+          # command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      # TODO
+      # - run:
+      #     name: Set github identity
+      #     command: make set_git_identity
+      # - when:
+      #     condition: << parameters.publish_dev >>
+      #     steps:
+      #       - run:
+      #           name: Publish components to NPM
+      #           command: make publish_npm_dev
+      # - unless:
+      #     condition: << parameters.publish_dev >>
+      #     steps:
+      #       - run:
+      #           name: Publish components to NPM
+      #           command: make publish_npm
+      # TODO
+      # - slack/status:
+      #     <<: *slack_status
 
 workflows: 
   # TODO rename "package" with repo name
@@ -39,3 +79,7 @@ workflows:
       - create_package_for_release:
           requires:
             - install_dependencies
+      - publish_to_npm:
+          type: approval
+          requires:
+            - create_package_for_release
