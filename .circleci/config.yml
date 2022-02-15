@@ -79,7 +79,10 @@ workflows:
       - create_package_for_release:
           requires:
             - install_dependencies
-      - publish_to_npm:
+      - approval_to_publish_package:
           type: approval
           requires:
             - create_package_for_release
+      - publish_to_npm:
+          requires:
+            - approval_to_publish_package
