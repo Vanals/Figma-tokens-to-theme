@@ -4,7 +4,7 @@ commands:
   create_package:
     description: "Creates a folder with package.json and files needed to be released to npm"
     steps:
-      - run: $(node scripts/release-script.js)
+      - run: $(node release-script/create-package.js)
 
 jobs:
   install_dependencies: 
@@ -33,5 +33,7 @@ workflows:
       and:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
-      - install_dependencies
+      - install_dependencies:
+          requires:
+            - create_package_for_release
       - create_package_for_release
