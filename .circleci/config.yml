@@ -20,7 +20,7 @@ jobs:
           paths: ./
           # TODO add save chache
 
-  create_package_to_be_released:
+  create_package_for_release:
     docker:
       - image: circleci/node:14.15.1
     steps:
@@ -34,3 +34,4 @@ workflows:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - install_dependencies
+      - create_package_for_release
