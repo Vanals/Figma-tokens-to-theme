@@ -2,11 +2,11 @@ const fs = require('fs')
 // TODO add 'package-release-folder in .gitignore
 
 const createPackage = function () {
-  // TODO update with packageName
-  console.log('\n 👩‍💻Creating packageName...👨‍💻 \n')
+
+  console.log('\n 👩‍💻Creating Nk Themes package...👨‍💻 \n')
   // Create package folder
   // TODO replace with package name folder
-  fs.mkdir('./package-release-folder', { recursive: true }, (err) => {
+  fs.mkdir('./nk-themes', { recursive: true }, (err) => {
     if (err) throw err;
     // TODO replace with packageName
     console.log('Created packageName folder ✅');
@@ -27,29 +27,29 @@ const createPackage = function () {
   `
 
   // Add package.json
-  fs.writeFile('./package-release-folder/package.json', packageJson, (err) => {
+  fs.writeFile('./nk-themes/package.json', packageJson, (err) => {
     if (err) throw err;
     console.log('Created package.json ✅');
   })
   
   // Add NewsKit theme json file
-  fs.copyFile('./build/nk-theme/figma-tokens.json', './package-release-folder/nk-themes.json', (err) => {
+  fs.copyFile('./build/nk-doc-themes/figma-tokens.json', './nk-themes/nk-doc-themes.json', (err) => {
     if (err) throw err;
     console.log('Added NewsKit themes json ✅');
   });
   
   // TODO TO ES6?
   // Add index.js to export files
-  const importExportList = `const NkThemes = require('./nk-themes.json');
+  const importExportList = `const NkDocThemes = require('./nk-doc-themes.json');
 
-  const themes = {
-    NkThemes
+  const NkThemes = {
+    NkDocThemes
   }
 
-  module.exports = themes
+  module.exports = NkThemes
   `
 
-  fs.writeFile('./package-release-folder/index.js', importExportList, (err) => {
+  fs.writeFile('./nk-themes/index.js', importExportList, (err) => {
     if (err) throw err;
     console.log('Added index.js with exports ✅');
   })

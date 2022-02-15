@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean-repo": "rm -rf build && rm -rf enhanced-figma-tokens",
-    "style-dictionary:build": "yarn clean-repo && node ./tools/create-full-aliases-figma-tokens.js && node build.js"
+    "clean-repo": "rm -rf build && rm -rf compatible-figma-tokens",
+    "create-compatible-figma-tokens-file": "node ./tools/create-compatible-figma-tokens-file.js",
+    "style-dictionary:build": "yarn clean-repo && yarn create-compatible-figma-tokens-file && node build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.1.1"

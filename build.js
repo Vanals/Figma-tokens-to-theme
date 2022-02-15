@@ -4,24 +4,14 @@ const {isNumeric} = require('./tools/isNumeric')
 console.log('Build started...');
 console.log('\n==============================================');
 
-// TODO 
-// If we are happy on keeping the values, a new feature should be soon rolled out to export a theme directly with the value references resolved.
-// https://github.com/six7/figma-tokens/issues/423 . Therefore part of this code might not be needed anymore.
-
-// TODO es6 support, typescript, tests, pretty, eslint.
-
 StyleDictionary.registerFormat({
   name: 'nk-theme',
   formatter: function({dictionary, platform, options, file}) {
     
-    // console.log(dictionary, 'DICTIONARY' + '🚣🏻')
-    // console.log(dictionary.allProperties, 'ALLPROPERTIES' + '🚣🏻')
-    // console.log(platform, 'PLATFORM' + '🚣🏻')
-    // console.log(options, 'OPTIONS' + '🚣🏻')
-    // console.log(file, 'FILE' + '🚣🏻')
-
     // console.log(dictionary.allTokens, 'ALLTOKENS' + '🚣🏻')
 
+    // TODO the default needs to be dynamic as we want to support multiple themes.
+    // or anyway manage it dynamically
     let nkTheme = {
       "NK-Light": {},
       "NK-Dark": {}

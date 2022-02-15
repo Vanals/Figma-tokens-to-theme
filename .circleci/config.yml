@@ -5,6 +5,7 @@ executors:
     docker:
       - image: circleci/node:16.13.0
 
+#TODO propose to Use it in place of a makeFile
 commands:
   create_package:
     description: "Creates a folder with package.json and files to be released to npm"
@@ -19,21 +20,28 @@ jobs:
     executor: node
     steps:
       - checkout
-      # TODO add restore chache
+      - restore_cache:
+          key: node-modules-v1-{{ checksum "yarn.lock" }}
       - run: yarn install
+      - save_cache: 
+          key: node-modules-v1-{{ checksum "yarn.lock" }}
+          paths: 'node_modules'
       - persist_to_workspace: 
           root: ./
-          # TODO CAN I REMOVE '-'? and move it to one line?
           paths: ./
-          # TODO add save chache
+  
+  run_style_dictionary:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: yarn style-dictionary:build
 
   create_package_for_release:
     executor: node
     steps:
       - attach_workspace:
           at: ./
-      - run: 'ls'
-      - run: yarn style-dictionary:build
       - create_package
   
   publish_to_npm:
@@ -43,10 +51,8 @@ jobs:
     #     default: false
     executor: node
     steps:
-      #TODO Do I need to persist from create_package_for_release?
       - attach_workspace:
           at: ./
-      - run: 'ls'
       # - run:
       # TODO
           # name: Add NPM login credentionals
@@ -72,16 +78,20 @@ jobs:
       #     <<: *slack_status
 
 workflows: 
-  # TODO rename "package" with repo name
+  # TODO add workflow for PR,  Validate changes(tests, eslint, ...?) + approval job for publishing test dev version to npm
+  
   build_and_release:
     when:
       and:
       - equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - install_dependencies
-      - create_package_for_release:
+      - run_style_dictionary:
           requires:
             - install_dependencies
+      - create_package_for_release:
+          requires:
+            - run_style_dictionary
       - approval_to_publish_package:
           type: approval
           requires:

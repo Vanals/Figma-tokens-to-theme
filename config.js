@@ -1,5 +1,5 @@
 var config = {
-  "source": ["./enhanced-figma-tokens/figma-tokens-with-full-aliases.json"],
+  "source": ["./compatible-figma-tokens/figma-tokens-with-full-aliases.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
@@ -73,9 +73,9 @@ var config = {
         }
       ]
     },
-    "nk-theme": {
+    "nk-docs-theme": {
       "transformGroup": "js",
-      "buildPath": "build/nk-theme/",
+      "buildPath": "build/nk-doc-themes/",
       "files": [
         {
           "destination": "figma-tokens.json",

@@ -17,10 +17,10 @@ const createFigmaTokensFileWithFullAliases = (figmaTokensObj) => {
       fullEnhancedStringObj = { ...fullEnhancedStringObj, ...themeWithFixedAliases}
   })
 
-  fs.mkdir('./enhanced-figma-tokens', { recursive: true }, (err) => {
+  fs.mkdir('./compatible-figma-tokens', { recursive: true }, (err) => {
     if (err) throw err;
   });
-  fs.writeFile('./enhanced-figma-tokens/figma-tokens-with-full-aliases.json', JSON.stringify(fullEnhancedStringObj, null, 2), (err) => console.log(err))
+  fs.writeFile('./compatible-figma-tokens/figma-tokens-with-full-aliases.json', JSON.stringify(fullEnhancedStringObj, null, 2), (err) => console.log(err))
 }
 
 createFigmaTokensFileWithFullAliases(figmaTokens)
