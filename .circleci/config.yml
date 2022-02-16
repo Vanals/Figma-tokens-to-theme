@@ -39,7 +39,7 @@ jobs:
           name: 'Run Style Dictionary'
           command: 'yarn style-dictionary:build'
 
-  create_package_for_release:
+  create_package_to_release:
     executor: node
     steps:
       - attach_workspace:
@@ -55,6 +55,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
+      - run: ls
       # - run:
       # TODO
           # name: Add NPM login credentionals
@@ -68,13 +69,13 @@ jobs:
       #     steps:
       #       - run:
       #           name: Publish components to NPM
-      #           command: make publish_npm_dev
+      #           command: {create command publish_npm_dev}
       # - unless:
       #     condition: << parameters.publish_dev >>
       #     steps:
       #       - run:
       #           name: Publish components to NPM
-      #           command: make publish_npm
+      #           command: {create command publish_npm}
       # TODO
       # - slack/status:
       #     <<: *slack_status
@@ -82,7 +83,8 @@ jobs:
 workflows: 
   # TODO add workflow for PR,  Validate changes(tests, eslint, ...?) + approval job for publishing test dev version to npm
   
-  build_and_release:
+
+  build_and_publish_prod_version:
     when:
       and:
       - equal: [ main, << pipeline.git.branch >> ]
@@ -91,13 +93,14 @@ workflows:
       - run_style_dictionary:
           requires:
             - install_dependencies
-      - create_package_for_release:
+      - create_package_to_release:
           requires:
             - run_style_dictionary
+      # TODO Remove approval step? directly "publish_to_npm" ?
       - approval_to_publish_package:
           type: approval
           requires:
-            - create_package_for_release
+            - create_package_to_release
       - publish_to_npm:
           requires:
             - approval_to_publish_package
