@@ -35,7 +35,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
-      - run: yarn style-dictionary:build
+      - run: 
+          name: 'Run Style Dictionary'
+          command: 'yarn style-dictionary:build'
 
   create_package_for_release:
     executor: node
