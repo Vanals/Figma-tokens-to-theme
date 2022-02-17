@@ -33,7 +33,7 @@ const createPackage = function () {
   })
   
   // Add NewsKit theme json file
-  fs.copyFile('./build/nk-doc-themes/figma-tokens.json', './nk-themes/nk-doc-themes.json', (err) => {
+  fs.copyFile('./build/nk-doc-themes/nk-doc-themes.json', './nk-themes/nk-doc-themes.json', (err) => {
     if (err) throw err;
     console.log('Added NewsKit themes json ✅');
   });

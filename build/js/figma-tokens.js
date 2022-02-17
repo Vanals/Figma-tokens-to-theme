@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 16 Feb 2022 14:55:48 GMT
+ * Generated on Thu, 17 Feb 2022 14:16:03 GMT
  */
 
 export const NkLightTransparent = "#ffffff00";

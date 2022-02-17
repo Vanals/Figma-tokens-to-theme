@@ -12,7 +12,7 @@ commands:
     steps:
       - run: 
           name: Create package
-          command: node release-script/create-package.js
+          command: node tools/create-nk-themes-package.js
 
 jobs:
 

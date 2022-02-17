@@ -73,12 +73,12 @@ var config = {
         }
       ]
     },
-    "nk-docs-theme": {
+    "nk-doc-theme": {
       "transformGroup": "js",
       "buildPath": "build/nk-doc-themes/",
       "files": [
         {
-          "destination": "figma-tokens.json",
+          "destination": "nk-doc-themes.json",
           "format": "nk-theme"
         }
       ]

@@ -3,7 +3,6 @@ const figmaTokens = require('../tokens/nk-doc-figma-tokens.json')
 var fs = require('fs')
 
 const createFigmaTokensFileWithFullAliases = (figmaTokensObj) => {
-
   let fullEnhancedStringObj = {} 
 
   Object.keys(figmaTokens).forEach(theme => {
@@ -19,8 +18,13 @@ const createFigmaTokensFileWithFullAliases = (figmaTokensObj) => {
 
   fs.mkdir('./compatible-figma-tokens', { recursive: true }, (err) => {
     if (err) throw err;
+    console.log('Created compatible-figma-tokens folder ✅');
   });
-  fs.writeFile('./compatible-figma-tokens/figma-tokens-with-full-aliases.json', JSON.stringify(fullEnhancedStringObj, null, 2), (err) => console.log(err))
+  
+  fs.writeFile('./compatible-figma-tokens/figma-tokens-with-full-aliases.json', JSON.stringify(fullEnhancedStringObj, null, 2), (err) => {
+    if (err) throw err;
+    console.log('Created compatible figma tokens file ✅');
+  })
 }
 
 createFigmaTokensFileWithFullAliases(figmaTokens)
