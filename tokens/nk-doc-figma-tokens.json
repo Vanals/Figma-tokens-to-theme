@@ -219,7 +219,7 @@
       "description": "Background colour applied to the Loading state of all  Buttons , & the Active state of the Outlined & Minimal Button"
     },
     "interactivePrimary030": {
-      "value": "{blue060}",
+      "value": "purple",
       "type": "color",
       "description": "Background colour applied to the Base state of the Solid  Button , & the border colour of the Outlined Button"
     },
