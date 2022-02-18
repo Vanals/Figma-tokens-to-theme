@@ -8,7 +8,7 @@ Explore how to integrate the “Figma Tokens” plugin into a process that would
 
 From the Figma plugin, designers are able to add or edit existing tokens. Which would translate in editing a JSON file hosted on a GitHub repo. In fact, after editing the tokens they can push and create a pull request.
 
-...
+```
 
 "inkBase": {
           "value": "{NK-NewsKit.palettes.neutral090}",
@@ -23,7 +23,7 @@ From the Figma plugin, designers are able to add or edit existing tokens. Which 
           "type": "color"
         },
         
-...
+```
 
 ## Outcome:
 
@@ -33,9 +33,9 @@ Diagram. From Figma Tokens to Nk-Themes
 
 The idea is that the compatible Figma tokens file, the Style Dictionary builds and the final package to be published to NPM will only be created and exist during the CircleCI workflow. They won’t be part of the Nk-Themes repo. Altho they can be created locally, if needed, for testing purposes.
 
-A few direct answers to the main questions we had in the ticket:
+### A few direct answers to the main questions we had in the ticket:
 
-How to convert the Figma tokens JSON file to a usable NewsKit theme? through Style Dictionary and token-transformer.
+- How to convert the Figma tokens JSON file to a usable NewsKit theme? through Style Dictionary and token-transformer.
 
 In order to convert the Figma tokens to a NewsKit theme I have explored Style Dictionary but in order to use the JSON, it had to be transformed. The figma-tokens.json file wasn’t compatible with Style Dictionary and I could not use npm: token-transformer because of the figma-token.json structure we use. 
 
@@ -55,11 +55,10 @@ I foresee new features being added to facilitate the integration of token sets w
 
 So it’s important for us to stay updated with new releases and features.
 
-How Style Dictionary can fit into the process? 
-
+- How Style Dictionary can fit into the process? 
 What benefits does it bring? 
-
 Worth starting to use it now or later?
+
 
 Style dictionary has a bit of a learning curve, BUT not too high.It allows us to transform a Figma tokens object into different formats which can make our life easier in the future when supporting multiple types of applications.The best thing tho is that we can create our own formatter. I have created a custom one for building the NK-theme object. The SD library is able to give us lots and well-organized information about the object we are using; making It easy to build whatever we want from it.
 
@@ -75,6 +74,7 @@ Nk-Themes spike repo:
 
 Below, is a code snipet coming from the implementation of the nk-themes package withing the ThemeChecker component.Basically, from the package, we will have to just import the theme set we want, in this case, we are importing the NKDocThemes, containing Light and Dark,  and passing the one we want to the CreateTheme function. As for now, the theme comes already compiled. So the internal aliases and references have been already solved by our formatted( soon on by the Figma Token plugin itself). But if we want we could modify the formatter in order to keep the aliases, If we do see any benefit.
 
+```
 import {NkDocThemes} from 'nk-themes'
 
 export const sdThemeLight = {
@@ -87,6 +87,7 @@ export const sdNkThemeLight = createTheme({
   baseTheme: newskitLightTheme,
   overrides: sdThemeLight,
 });
+```
 
  
 
